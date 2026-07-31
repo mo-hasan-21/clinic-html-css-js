@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Consultation - Dr. Tahir's Clinic</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <a href="index.html" class="nav-brand">DR. TAHIR'S HOMEOPATHIC CLINIC</a>
+        <ul class="nav-links">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="consultation.html">CONSULTATION</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Consultation Section -->
+    <section class="section" style="padding-top: 150px;">
+        <h2 class="section-title reveal">BOOK AN APPOINTMENT</h2>
+        
+        <div class="form-container reveal">
+            <form id="consultationForm">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="name">FULL NAME</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">EMAIL ADDRESS</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="date">PREFERRED DATE</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="time">PREFERRED TIME</label>
+                        <input type="time" id="time" name="time" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="issue">BRIEFLY DESCRIBE YOUR HEALTH CONCERN</label>
+                    <textarea id="issue" name="issue" rows="4" required></textarea>
+                </div>
+
+                <button type="submit" class="btn" style="width: 100%;">SUBMIT REQUEST</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2026 DR. TAHIR'S HOMEOPATHIC CLINIC. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
